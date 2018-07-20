@@ -1,4 +1,3 @@
-/* Gallary */
 body {
     overflow: hidden;
     background-color: #000000;
@@ -127,4 +126,8 @@ NAV
 .dots .dot a.active {
     border-color: #FFF;
     background-color: transparent;
+}
+
+.nonDraggableImage{
+    -webkit-user-drag: none;
 }
