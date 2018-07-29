@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="noteApp">
+
+<head>
+  <meta charset="utf-8" />
+  <title>AngularJS Plunker</title>
+  <script>
+    document.write('<base href="' + document.location + '" />');
+  </script>
+  <link rel="stylesheet" href="style.css" />
+  <script data-require="jquery@*" data-semver="2.0.3" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+  <script data-require="angular.js@1.0.x" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js" data-semver="1.0.8"></script>
+  <script src="app.js"></script>
+</head>
+
+<body ng-controller="MainCtrl", ng-app="myApp"></body>
+        <p><a href="#/!">Home</a></p>
+    
+        <a href="#!gallery">Gallery</a>
+        <a href="#!notes">Notes</a>
+        <a href="#!login">Login/a>
+  <h1 class="title">The Note Making App</h1>
+  <notepad/>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+  <script>
+    var app = angular.module("myApp", ["ngRoute"]);
+    app.config(function($routeProvider) {
+        $routeProvider
+        .when("/", {
+            templateUrl : "index.html"
+        })
+        .when("/gallery", {
+            templateUrl : "gallery.html"
+        })
+        .when("/notew", {
+            templateUrl : "notes.htm"
+        })
+        .when("/place", {
+            templateUrl : "placeholderpage.htm"
+        });
+    });
+    </script>
+</body>
+
+</html>
